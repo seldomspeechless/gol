@@ -1,14 +1,10 @@
-#include <stdio.h>
-#include "raylib.h"
 #include <stdbool.h>
+#include <stdio.h>
 #include <stdlib.h>
-#include <time.h>
 #include <string.h>
-
-typedef struct {
-    int width;
-    int height;
-} ScreenSet;
+#include <time.h>
+#include "main.h"
+#include "raylib.h"
 
 int getNeighbours(ScreenSet ss, bool (*grid)[ss.height], Vector2 pos) {
     int res = 0;
